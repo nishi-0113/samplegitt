@@ -1,0 +1,31 @@
+.content {
+    width: 400px;
+    height: 450px;
+}
+
+.red {
+    height: 100px;
+    background: #ff0000;
+}
+
+.content-m {
+    display: flex;
+}
+
+.green {
+    width: 150px;
+    height: 250px;
+    background: #00ff1e;
+}
+
+.blue {
+    width: 250px;
+    height: 250px;
+    background: #3300ff;
+}
+
+
+.yellow {
+    height: 100px;
+    background: #ffe600;
+}
