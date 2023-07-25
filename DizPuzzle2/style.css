@@ -1,0 +1,58 @@
+.content {
+    width: 400px;
+    height: 450px;
+}
+
+.red {
+    height: 100px;
+    background: #ff0000;
+}
+
+.content-m {
+    display: flex;
+    
+}
+
+.green {
+    width: 150px;
+    height: 250px;
+    background: #00ff51;
+}
+
+.content-s {
+    display: flex;
+}
+
+
+
+
+
+
+.pink {
+    height: 50px;
+    width: 150px;
+    background: #cc00db;
+}
+
+.blue {
+    height: 100px;
+    width: 150px;
+    background: #0093b7;
+}
+
+.bezyu {
+    height: 150px;
+    width: 100px;
+    background: #ff9e6b;
+}
+
+.tyairo {
+    height: 100px;
+    background: #8c2727;
+}
+
+.yellow {
+    height: 100px;
+    
+    background: #fff700;
+}
