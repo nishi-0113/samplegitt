@@ -8,17 +8,21 @@
     background: #ff0000;
 }
 
-.content-m {
-    display: flex;
+.content-m::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .green {
+    float: left;
     width: 150px;
     height: 250px;
     background: #00ff1e;
 }
 
 .blue {
+    float: right;
     width: 250px;
     height: 250px;
     background: #3300ff;
