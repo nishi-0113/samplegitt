@@ -49,24 +49,19 @@ body {
     margin: 40px;
 }
 
-.contain-s {
+.main-s {
+    width: 150px;
+    height: 50px;
+    background: #ff863f;
+    border: 5px solid #ffffff;
+}
+.main-s:nth-child(2) {
+    margin-top: 10px;
+}
+.main-s:last-child {
     margin-top: 10px;
 }
 
-.main-m {
-    position: relative;
-    width: 150px;
-    height: 50px;
-    background: #fff;
-    padding: 5px;
-}
-
-.main-s {
-    position: absolute;
-    width: 140px;
-    height: 40px;
-    background: #ff863f;
-}
 .yellow {
     height: 100px;
     background: #ffd000;
