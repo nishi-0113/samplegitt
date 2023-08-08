@@ -1,0 +1,238 @@
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    padding: 20px 40px;
+}
+
+img{
+    max-width: 100%;
+}
+.site-title {
+    line-height: 1px;
+}
+
+.site-title a {
+    display: block;
+}
+
+#navi {
+    display: block;
+    position: fixed;
+    
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+    color: #fff;
+    padding: 60px 25px;
+    background-color: #121212;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+
+
+.open #navi {
+    left: 0;
+    opacity: 1;
+}
+.nav-menu {
+    margin-bottom: 60px;
+    border-top: solid 1px #fff;
+}
+.nav-menu li {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    border-bottom: solid 1px #fff;
+}
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-sub li{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav-sub li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle_btn {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.toggle_btn span:nth-child(1) {
+    top: 4px;
+}
+
+.toggle_btn span:nth-child(2) {
+    top: 14px;
+}
+
+.toggle_btn span:nth-child(3) {
+    bottom: 4px;
+}
+
+.open .toggle_btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+}
+
+
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask {
+    display: block;
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* pick */
+#pickup {
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+
+.sec-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* slider */
+.swiper {
+    margin-top: 60px;
+}
+.swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height: 80px;
+   
+  }
+
+  .swiper-slide {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    color: #ffffff;
+    width: 31%;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+    padding: 0 30px;
+  }
+
+#feature {
+    max-width: 1260px;
+    padding: 100px 16px 50px 16px;
+    margin: -50px auto 10px auto;
+}
+
+
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px 4px #ccc;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+.fadein.is-active {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    transition: 1s;
+}
+
+#contact {
+    color: #fff;
+    background-color: #121212;
+    padding: 50px 0;
+}
+.contact {
+    max-width: 1260px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.text-1 {
+    width: 45%;
+}
+.contact-text {
+    margin-bottom: 30px;
+}
+.contact-form {
+    width: 45%;
+}
+
+dd {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.button input{
+width: 200px;
+color: #fff;
+background-color: #121212;
+border: solid 1px #fff;
+padding: 12px 0;
+margin-bottom: 0;
+}
+
+.button input:hover {
+    background-color: #fff;
+    color: #121212;
+}
